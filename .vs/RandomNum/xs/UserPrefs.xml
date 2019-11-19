@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{C924F303-27F9-4A16-AA4F-4212872761BE}|Default">
+  <MonoDevelop.Ide.ItemProperties.randomNum PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RandomNum/Controllers/random.cs">
+    <Files>
+      <File FileName="randomNum/Controllers/random.cs" Line="98" Column="43" />
+      <File FileName="randomNum/Properties/launchSettings.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="randomNum" expanded="True">
+            <Node name="randomNum" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
