@@ -66,9 +66,9 @@ namespace randomNum.Controllers
         }
 
         [HttpGet("Q14")]
-        public List<int> Q14(int Q14)
+        public List<int> Q14(int number)
         {
-            int theNumber = Q14;
+            int theNumber = number;
             var numbers = new List<int>();
             int fector = 10000;
             if (theNumber > 1000)
@@ -84,10 +84,10 @@ namespace randomNum.Controllers
         }
 
         [HttpGet("Q13")]
-        public List<double> Q13(List<int> numbers)
+        public object[] Q13(List<int> numbers)
         {
             int c = numbers.Count;
-            var res = new List<double>();
+            var res = new object[3];
             if (c == 2)
             {
                 int firstNum = numbers[0];
@@ -95,20 +95,24 @@ namespace randomNum.Controllers
 
                 if (secondNum != 0 && firstNum != 0)
                 {
-                    res.Add(firstNum / secondNum);
+                    res[0]=(firstNum / secondNum);
 
                 }
                 else if (secondNum == 0)
                 {
-                    res.Add(secondNum / firstNum);
+                    res[0]=(secondNum / firstNum);
                 }
                 else if (firstNum == 0)
                 {
-                    res.Add(firstNum / secondNum);
+                    res[0]=(firstNum / secondNum);
                 }
-                res.Add(firstNum + secondNum);
-                res.Add(firstNum - secondNum);
-                res.Add(firstNum * secondNum);
+                else if (firstNum == 0 && secondNum == 0)
+                {
+                    res[0] = "inf"; 
+                }
+                res[1]=(firstNum + secondNum);
+                res[2]=(firstNum - secondNum);
+                res[3]=(firstNum * secondNum);
             }
 
             return res;
@@ -140,7 +144,7 @@ namespace randomNum.Controllers
         }
 
         [HttpGet("Q11")]
-        public string Q11(string theword)
+        public string Q11(string theword="")
         {
             string word = theword;
 
