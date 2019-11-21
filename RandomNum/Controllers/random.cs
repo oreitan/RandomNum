@@ -65,7 +65,7 @@ namespace randomNum.Controllers
             return numbers;
         }
 
-        [HttpGet("Q14")]
+        [HttpGet("numSperder")]
         public List<int> Q14(int number)
         {
             int theNumber = number;
@@ -83,7 +83,7 @@ namespace randomNum.Controllers
             return numbers;
         }
 
-        [HttpGet("Q13")]
+        [HttpGet("autiCalc")]
         public object[] Q13(List<int> numbers)
         {
             int c = numbers.Count;
@@ -119,7 +119,7 @@ namespace randomNum.Controllers
         }
 
 
-        [HttpGet("Q19")]
+        [HttpGet("revNum")]
         public List<int> Q19(int start)
         {
             var res = new List<int>();
@@ -143,7 +143,7 @@ namespace randomNum.Controllers
 
         }
 
-        [HttpGet("Q11")]
+        [HttpGet("wordRev")]
         public string Q11(string theword="")
         {
             string word = theword;
@@ -161,7 +161,7 @@ namespace randomNum.Controllers
             return "error";
         }
 
-        [HttpGet("Q20")]
+        [HttpGet("starNum")]
         public List<string> Q20(int starnum)
         {
             string star = "*";
